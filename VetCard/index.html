@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>VetCard</title>
         <link href="./styles.css" rel="stylesheet" />
-        <script src="./script.js"></script>
         <meta
             name="description"
             content="VetCard te ayuda a organizar vacunas, medicinas, nutrición, citas y recordatorios de tus mascotas"
@@ -25,19 +24,20 @@
         </header>
 
         <main>
-            <section>
-                <a href="#" aria-label="Disponible en Apple Store">
-                    Apple Store
-                </a>
+            <section class="hero">
+                <p class="badge">Disponible para iPhone y iPad</p>
+                <a class="button" href="https://apps.apple.com/app/id6761550438"
+                    >App Store</a
+                >
             </section>
 
-            <section id="features">
+            <section id="features" class="features">
                 <h2>
                     Todo lo necesario para el cuidado de tus mascotas en un solo
                     lugar.
                 </h2>
 
-                <article>
+                <article class="card">
                     <h3>Vacunas</h3>
                     <p>
                         Manten todas las vacunas y sus proximas dosis de manera
@@ -45,17 +45,17 @@
                     </p>
                 </article>
 
-                <article>
+                <article class="card">
                     <h3>Nutrición</h3>
                     <p>Crea planes de alimentación y recibe recordatorios.</p>
                 </article>
 
-                <article>
+                <article class="card">
                     <h3>Medicinas</h3>
                     <p>Controla tratamientos, dosis y horarios importantes.</p>
                 </article>
 
-                <article>
+                <article class="card">
                     <h3>Calendario</h3>
                     <p>Registra citas veterinarias y eventos importantes.</p>
                 </article>
