@@ -268,7 +268,7 @@ footer div {
     }
 
     .hero-tablet {
-        max-width: 100%;
+        display: none;
     }
 
     .features h2 {
@@ -277,6 +277,7 @@ footer div {
 
     .feature-row,
     .feature-row.reverse {
+        display: grid;
         grid-template-columns: 1fr;
         gap: 32px;
         padding: 64px 0;
@@ -284,7 +285,7 @@ footer div {
 
     .feature-row.reverse .feature-images,
     .feature-row.reverse .feature-text {
-        order: initial;
+        order: unset;
     }
 
     .feature-text {
@@ -295,11 +296,18 @@ footer div {
         order: 2;
         min-height: auto;
         display: grid;
-        gap: 24px;
+        justify-items: center;
     }
 
     .feature-images img {
         position: static;
-        width: 100% !important;
+    }
+
+    .feature-images img:first-child {
+        width: min(100%, 330px) !important;
+    }
+
+    .feature-images img:last-child {
+        display: none;
     }
 }
