@@ -277,23 +277,20 @@ footer div {
 
     .feature-row,
     .feature-row.reverse {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 32px;
         padding: 64px 0;
     }
 
-    .feature-row.reverse .feature-images,
+    .feature-row .feature-text,
     .feature-row.reverse .feature-text {
-        order: unset;
+        order: 1 !important;
     }
 
-    .feature-text {
-        order: 1;
-    }
-
-    .feature-images {
-        order: 2;
+    .feature-row .feature-images,
+    .feature-row.reverse .feature-images {
+        order: 2 !important;
         min-height: auto;
         display: grid;
         justify-items: center;
